@@ -3,7 +3,7 @@ from views import Index, About, Contact
 
 
 def add_today_front_controller(request):
-    request['date'] = date.today()
+    request['today'] = date.today()
 
 
 fronts = [add_today_front_controller]

@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
-</head>
-<body>
-    <h1>Отправьте нам сообщение</h1>
-    <form action="" method="POST">
-        <input type="text" placeholder="Тема сообщения" name="message_idea"><br>
-        <input type="text" placeholder="Ваше имя" name="sender_name"><br>
-        <textarea 
-            name="message" 
-            placeholder="Введите ваше сообщение здесь" 
-            id="message" 
-            cols="30" 
-            rows="10"
-        >
-        </textarea><br>
-        <input type="submit" value="Отправить">
-    </form>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}
+    Контакты
+{% endblock %}
+{% block style %}
+    {% include "inc_style.html" %}
+{% endblock %}
+{% block menu %}
+    {% include "inc_menu.html" %}
+{% endblock %}
+{% block content %}
+    {% include "inc_contacts.html" %}
+{% endblock %}
